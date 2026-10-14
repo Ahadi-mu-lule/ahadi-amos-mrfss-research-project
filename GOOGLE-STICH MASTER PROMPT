@@ -1,0 +1,133 @@
+**Google Stitch** (`stitch.withgoogle.com`) is Google Labs’ AI-native UI design workspace that turns structured natural-language prompts into high-fidelity web and mobile layouts with editable design tokens.
+
+Here is the master prompt formatted for Google Stitch. You can paste it directly into the Stitch prompt box to generate the screens, layout components, and visual prototype.
+
+***
+
+```text
+# PROJECT: RELIEF aid FOUNDATION (-RaF-)
+Platform: Multi-Page Responsive Web Application (Desktop & Mobile 390px)
+Industry: Humanitarian / Refugee-Led Non-Profit (RLO)
+Location: Base Camp, Rwamwanja Refugee Settlement, Western Uganda
+Design Archetype: Modern Humanitarian Editorial (Similar to Alight, IRC, GiveDirectly)
+Tone: Dignified, Authoritative, Community-Driven, High-Impact (Zero "poverty porn")
+
+## 1. BRAND DESIGN SYSTEM & COLOR TOKENS
+Base the entire design system strictly on the official circular "RAF - EMPOWERING THE FUTURE" emblem:
+- Primary Brand Green: #0D532B (Forest Green from the RAF monogram & lower crescent)
+- Secondary Brand Blue: #0A78BE (Cerulean Blue from "Empowering The Future" text & upper crest)
+- Accent Warm Amber: #D97706 (Used sparingly for urgent notices or donation highlights)
+- Canvas Background: #F8FAFC (Clean, crisp, high-contrast light slate white)
+- Surface Cards: #FFFFFF with subtle 1px solid #E2E8F0 borders and 0 1px 2px rgba(0,0,0,0.04) shadow
+- Typography: Plus Jakarta Sans (Headings, bold weights 700/800) and Inter (Body copy, weights 400/500). High contrast slate #0F172A for headings, #475569 for secondary text.
+- STRICT UI RULE: DO NOT put government permit numbers, OPM clearance stamps, or license references on the homepage hero or main UI. Legitimacy is handled through clean modern NGO architecture (Minimalist footer + dedicated Governance subpage).
+
+---
+
+## 2. SCREENS TO GENERATE IN THIS WORKSPACE
+
+### SCREEN 1: HOMEPAGE (Desktop 1440px & Mobile 390px)
+- Global Navigation:
+  * Left: Circular RAF green/blue emblem + brand lockup: "RELIEF aid FOUNDATION (-RaF-)" with subtext "Empowering the Future • Rwamwanja Settlement".
+  * Center Links: Who We Are (dropdown with Governance), Our Programs, Reports & Impact, Stories, Contact.
+  * Right Action: Solid Brand Green (#0D532B) button: "[ Support Our Work / Donate ]".
+- Hero Section:
+  * Full-width editorial hero featuring authentic field imagery of refugee women leaders in Rwamwanja.
+  * Headline: "Restoring Hope, Building Self-Reliance in Rwamwanja."
+  * Subtitle: "A refugee-women-led organization transforming vulnerable children, youth, and women across Rwamwanja Settlement and host communities through sustainable agribusiness, VSLAs, and literacy."
+  * Action Buttons: Primary solid green "[ Empower a Family ]" and secondary outline "[ View Field Reports ]".
+- Live Impact Counter Strip (Horizontal Tabular Ribbon):
+  * White card with 3px top green border displaying 4 metrics:
+    1. "100+" -> Monthly Active Beneficiaries
+    2. "4" -> Community Pillars Active
+    3. "100%" -> Refugee-Women-Led Execution
+    4. "Base Camp" -> Physical Field Operations Center
+- Program Pillars Grid (4 Cards with Icons & Program Tags):
+  1. Women Agribusiness & Food Security (Sprout icon, #0D532B tag)
+  2. Village Savings & Loan Associations - VSLAs (Coins icon, #0A78BE tag)
+  3. Functional Adult & Youth Literacy (BookOpen icon, #0D532B tag)
+  4. Young Mothers Dignity & Livelihood Skills (HeartHandshake icon, #0A78BE tag)
+- Reports Vault Teaser:
+  * Split-row showcase of the 2 most recent monthly reports with instant "[Download PDF]" buttons.
+- Featured Story Editorial Card:
+  * "From Survival to Harvest: How Bahati Built a Future in Base Camp" (4 min read, photo, author byline).
+- Modern Minimalist Footer:
+  * Dark slate background (#0F172A), clean white/slate text:
+  * Legal descriptor: "A registered refugee-led non-profit organization operating in Base Camp, Rwamwanja Settlement and host communities, Western Uganda."
+  * Discrete compliance links: "Accountability & Governance", "PSEA & Child Safeguarding", "Privacy Policy", and "Webmaster Portal".
+
+---
+
+### SCREEN 2: CMS REPORTS & IMPACT VAULT (`/reports`)
+- Header: "Impact & Operational Transparency" with subhead: "Audited monthly field reports and quantitative progress from Base Camp, Rwamwanja."
+- Filter Pill Bar: Active tabs: [ All Reports ] [ Comprehensive Audits ] [ VSLAs & Savings ] [ Agribusiness ]
+- Document Cards (List/Grid Layout):
+  * Card 1: "March 2026 Monthly Field Activity & Progress Report"
+    - Tag: #EAF4EE green pill: "Comprehensive Field Audit"
+    - Metric Pills: [104 Beneficiaries] [UGX 3.45M Capital Saved]
+    - Executive Summary text box.
+    - Direct Action: Styled button with PDF icon: "[ Download Official Report (1.4 MB) ]".
+  * Card 2: "February 2026 VSLA Capital Formation & Micro-Enterprise Review"
+    - Tag: #EBF5FB blue pill: "VSLAs & Savings"
+    - Metric Pills: [38 Women Funded] [100% Repayment Rate]
+    - Action: "[ Download Official Report (1.1 MB) ]".
+
+---
+
+### SCREEN 3: ADVANCED MODERN BLOG ARTICLE (`/stories/bahati-agribusiness-harvest`)
+- Header: Category pill ("Women Voices" in Cerulean Blue), Title: "From Survival to Harvest: How Bahati Built a Future in Base Camp".
+- Metadata: "By Furaha, Executive Director • 4 min read • March 24, 2026".
+- Social Share Floating Bar: Quick icons for WhatsApp, LinkedIn, X, Facebook, and Copy Link.
+- Editorial Body: Generous line height (1.65), authentic photo with photo caption, bold pull-quote with left green border (#0D532B): "'Before R-a-F brought us together, we farmed in isolation. Now, we pool our harvests and save our earnings every Tuesday.'"
+- In-Article Donation Conversion Block (Card at foot of article):
+  * Left border 4px solid #0A78BE (Cerulean Blue), background #F8FAFC.
+  * Heading: "Support Women Farmers in Rwamwanja"
+  * Subtext: "Your contribution directly funds certified vegetable seeds and garden hoes for young refugee mothers."
+  * Quick-Amount Chips: [ $25 ] [ $50 ] [ $100 ] [ Custom ] -> Button: "[ Complete Donation ]".
+
+---
+
+### SCREEN 4: UGANDA-OPTIMIZED DONATION ENGINE (`/donate`)
+- Dual-Currency Radio Selector: [ USD ($) ] | [ UGX (USh) ]
+- Frequency Selector: [ One-Time Gift ] | [ Monthly Supporter ]
+- Donation Tiers Grid:
+  * Tile 1: $25 / UGX 95,000 -> "Supplies vegetable seeds and garden tools for 2 household plots."
+  * Tile 2: $50 / UGX 190,000 (Highlighted with #0D532B border) -> "Covers literacy materials and passbooks for a 15-woman VSLA cohort."
+  * Tile 3: $100 / UGX 380,000 -> "Provides revolving micro-grant capital for 1 young mother enterprise."
+- Payment Method Tabs:
+  * Tab A: "Cards & Mobile Money (Pesapal / Instant Checkout)"
+    - Form fields for Cardholder Name, Card Number or MTN / Airtel Mobile Money phone number input.
+  * Tab B: "Direct Bank Wire / SWIFT (Major Grants & Philanthropy)"
+    - Copyable institutional banking card with Account Name ("RELIEF AID FOUNDATION"), Bank Name, SWIFT/BIC code, and USD/UGX account numbers with a "Copy Details" button.
+- Trust & Reassurance Footer:
+  * 256-Bit SSL Encrypted padlock badge.
+  * Visual Allocation Ring: "85% Direct Community Programs | 15% Operations & Facilitation".
+  * Microtext: "Official automated digital donation receipt issued instantly."
+
+---
+
+### SCREEN 5: WEBMASTER ADMIN & MAINTENANCE DASHBOARD (`/admin`)
+- Layout: High-density, utilitarian management console for the monthly retainer workflow.
+- Top Bar: System Status Indicator (Green dot: "All Systems Operational"), Storage usage ("42.8 MB / 10 GB used"), and "Last Backup: Today at 03:00 EAT".
+- Main Actions Grid:
+  1. "Live Impact Metric Updater": Simple form to change live homepage numbers (Beneficiary Count, Savings Total, Programs Active) with instant "[ Save Live Changes ]" button.
+  2. "Monthly Report Uploader (60-Sec Form)": Title, Month/Year selector, Focus category, Metric highlights, and a clean drag-and-drop zone for PDF files.
+  3. "Field Story CMS Editor": Title, slug, author, cover photo uploader, and markdown writing area.
+  4. "Maintenance & Backup Tool": One-click button: "[ Trigger Automated Backup Snapshot ]".
+
+---
+
+## 3. ASSET & INTERACTION DETAILS
+- All card hover states: 1px border shift to #CBD5E1 with subtle -1px vertical lift.
+- Buttons have minimum 48px touch targets for mobile accessibility.
+- Zero placeholder text: Use authentic Rwamwanja Base Camp operational data everywhere.
+```
+
+***
+
+### How to Use This in Google Stitch:
+1. Go to **[stitch.withgoogle.com](https://stitch.withgoogle.com/)** and start a new project.
+2. Paste the prompt above into the generation box.
+3. Stitch will generate the multi-screen canvas (Homepage, Reports Vault, Blog Article, Donation Portal, and Webmaster Dashboard) using the exact Forest Green and Cerulean Blue palette.
+4. Use Stitch's **Prototype Mode** to link the buttons (e.g., clicking *"Donate"* on the homepage opens Screen 4, clicking *"View Field Reports"* navigates to Screen 2).
+5. Click **Download / Export** to get the clean HTML/CSS and `DESIGN.md` ready for your builders or code agents.
